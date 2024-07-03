@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac OS 5.0 Style Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mac-white': '#FFFFFF',
+                        'mac-black': '#000000',
+                        'mac-gray': '#BBBBBB',
+                    },
+                    fontFamily: {
+                        'mac': ['Chicago', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'Chicago';
+            src: url('path-to-your-chicago-font-file.woff2') format('woff2');
+        }
+    </style>
+</head>
+<body class="bg-mac-gray font-mac text-mac-black p-4 h-full overflow-hidden">
+    <div class="max-w-4xl mx-auto bg-mac-white border-[3px] border-mac-black shadow-lg">
+        <!-- Menu Bar -->
+        <div class="bg-mac-white border-b-[3px] border-mac-black p-1 flex space-x-4 text-sm">
+            <span class="apple-icon">🍎</span>
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Special</span>
+        </div>
+
+        <!-- Main Window -->
+        <div class="p-4">
+            <div class="bg-mac-white border-[3px] border-mac-black mb-4">
+                <div class="border-b-[1px] border-mac-black p-2 font-bold">System 5.0</div>
+                <div class="border-b-[1px] border-mac-black p-2 text-xs">
+                    4 items &nbsp;&nbsp;&nbsp; 665K in disk &nbsp;&nbsp;&nbsp; 115K available
+                </div>
+                <div class="p-4 flex space-x-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-mac-gray mx-auto mb-2"></div>
+                        <span class="text-xs">System Folder</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-mac-gray mx-auto mb-2"></div>
+                        <span class="text-xs">Utilities Folder</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 border-[1px] border-mac-black mx-auto mb-2"></div>
+                        <span class="text-xs">Update Folder</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Content Area -->
+            <div class="bg-mac-white border-[3px] border-mac-black">
+                <div class="border-b-[1px] border-mac-black p-2 font-bold">Blog Posts</div>
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Welcome to My Retro Blog</h2>
+                    <p class="mb-4 text-sm">This is where your blog post content would go. It's styled to look like it's straight out of 1984!</p>
+                    <button class="bg-mac-white border-[3px] border-mac-black px-4 py-1 text-sm active:bg-mac-gray">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Icons -->
+    <div class="fixed top-4 right-4 flex flex-col items-center space-y-4">
+        <div class="text-center">
+            <div class="w-16 h-16 bg-mac-gray mx-auto mb-2"></div>
+            <span class="text-xs">System 5.0</span>
+        </div>
+        <div class="text-center">
+            <div class="w-16 h-16 border-[1px] border-mac-black mx-auto mb-2"></div>
+            <span class="text-xs">Untitled</span>
+        </div>
+        <div class="text-center">
+            <div class="w-16 h-16 border-[1px] border-mac-black mx-auto mb-2"></div>
+            <span class="text-xs">Trash</span>
+        </div>
+    </div>
+</body>
+</html>
